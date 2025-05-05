@@ -1,10 +1,24 @@
-l1=["apple","pineapple","apricot",]
-l2=set()
-for v1 in range (0,(len(l1))):
-    v2=l1[v1]
-    for v3 in range (0,(len(l1))):
-     if "e" in v2:
-        l2.add(v2)
-print(l2)
+import random
+v1=random.randint(1,100)
+try:
+ v2=int(input("ur guess:"))
+except:
+ print("enter a whole number")
+ v1=int(input("ur guess:"))
+while v2 > 100:
+    print("Maximum number is 100")
+    v2=int(input("ur guess:"))
+v3=1
+while v3 == 1:
+  if v2 == v1:
+    print("-------------YOU WON!-------------------")
+    print("-run the code again to start a new game-")
+
+
+
+
+
+
+
 
 
